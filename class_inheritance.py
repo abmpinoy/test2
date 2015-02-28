@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-#!/usr/bin/python
-
+# test1 git
 class Parent:        # define parent class
    parentAttr = 100
    def __init__(self):
