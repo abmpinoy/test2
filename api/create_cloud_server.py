@@ -1,29 +1,39 @@
 #!/usr/bin/env python
 
-import json, random, hashlib, string, time, hmac, base64
+from vars import *
 import requests as req
+import subprocess as sub
 
-def id_generator(size=20, chars=string.ascii_uppercase + string.digits):
-    return ''.join(random.choice(chars) for _ in range(size))
+Action = "run-instance" 
+Action_img = "describe-image"
 
-urlbase = "https://cloudapi.atlantic.net/api.php/?Action=run-instance&Version=2010-12-30"
-ACSAccessKeyId = "ATL981de504cb0f5c4528d959abe0fd465b"
-priv_key = "5408e3d4de33c7adfdbf72ed648bddc80609890a"
-Format = "json"
-Timestamp= int(float(time.time()))
-Rndguid = id_generator()
-string_to_sign = str(Timestamp) + Rndguid
-message = bytes(string_to_sign).encode('utf-8')
-secret = bytes(priv_key).encode('utf-8')
-Signature = base64.b64encode(hmac.new(secret, message, digestmod=hashlib.sha256).digest())
-planname =  raw_input("Pick an option(S,M,L,XL,XXL: ")
+planname =  raw_input("Select VPS size(S,M,L,XL,XXL: ")
 servername = raw_input("Server Name: ")
-#planname = "L"
-#servername = "coding_test"
-imageid = "CentOS-6.5_64bit"
 
-# Assemble query
-r = urlbase + "&ACSAccessKeyId=" + ACSAccessKeyId + "&Format=" + Format \
+'''
+# List images
+l = urlbase +  "Action=" + Action_img + "&Version=" + Version + "&ACSAccessKeyId=" + ACSAccessKeyId + "&Format=" + Format \
++ "&Timestamp=" + str(Timestamp) + "&Rndguid=" + Rndguid + "&Signature=" + Signature
+print "\nQuery:"
+print l + "\n"
+
+ldata = req.get(l).json()
+#print data
+litems =  ldata['describe-imageresponse']['imagesset']
+
+for litem in litems:
+    img = litems[litem]
+    print "imageid: " + img['imageid']
+'''
+
+for line in sub.Popen(['/home/python/api/get_images.py'], stdout=sub.PIPE).stdout.read().split('\n'):
+    print line
+
+
+imageid = raw_input("\nSelect an image: ")
+
+# Create request
+r = urlbase + "Action=" + Action + "&Version=" + Version + "&ACSAccessKeyId=" + ACSAccessKeyId + "&Format=" + Format \
 + "&Timestamp=" + str(Timestamp) + "&Rndguid=" + Rndguid + "&Signature=" + Signature + "&servername=" + servername \
 + "&imageid=" + imageid + "&planname=" + planname.upper()
 print "\nQuery:"
