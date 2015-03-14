@@ -1,0 +1,134 @@
+$TTL 36000
+@               IN      SOA     gsvlfl-ns-1.atlantic.net. root.atlantic.net. (
+                        2015030400
+                        86400
+                        1800
+                        720000
+                        360 )
+                IN      NS      gsvlfl-ns-1.atlantic.net.
+                IN      NS      orldfl-ns-1.atlantic.net.
+
+
+1               IN      PTR     andc-anet-gw.atlantic.net.
+2               IN      PTR     andc-abr-1.atlantic.net.
+3               IN      PTR     andc-abr-2.atlantic.net.
+6               IN      PTR     andc-pt-5.atlantic.net.
+7               IN      PTR     andc-pt-w45.atlantic.net.
+10              IN      PTR     andc-pt-w46.atlantic.net.
+13              IN      PTR     lhost3.atlantic.net.
+14              IN      PTR     lhost4.atlantic.net.
+15              IN      PTR     lhost5.atlantic.net.
+16              IN      PTR     lhost6.atlantic.net.
+17              IN      PTR     lhost7.atlantic.net.
+
+20              IN      PTR     lhost9.atlantic.net.
+;21             IN      PTR     alvin.atlantic.net.
+;22             IN      PTR     simon.atlantic.net.
+
+25              IN      PTR     not69box.atlantic.net.
+;26             IN      PTR     unep.atlantic.net.
+27              IN      PTR     webmail2.atlantic.net.
+28              IN      PTR     webmail.dolfo.net.
+29              IN      PTR     hera.atlantic.net.
+;30              IN      PTR     clblfl-rr-2.atlantic.net.
+31              IN      PTR     abuse.cerberus.atlantic.net.
+;32              IN      PTR     clblfl-rr-4.atlantic.net.
+33              IN      PTR     staff-mail.atlantic.net.
+34              IN      PTR     whost1.atlantic.net.
+;36             IN      PTR     theodore.atlantic.net.
+
+;37             IN      PTR     andc-slb-1.atlantic.net.
+37              IN      PTR     nms.atlantic.net.
+
+40              IN      PTR     lhost10.atlantic.net.
+
+;41-47 save for more access servers
+48              IN      PTR     andc-as-2.atlantic.net.
+49              IN      PTR     andc-as-1.atlantic.net.
+
+;50             IN      PTR     clblfl-rr-9.atlantic.net.
+51              IN      PTR     os1.atlantic.net.
+;52             IN      PTR     clblfl-rr-8.atlantic.net.
+;53             IN      PTR     clblfl-rr-5.atlantic.net.
+54              IN      PTR     andc-pt-w44.atlantic.net.
+55              IN      PTR     andc-pt-w43.atlantic.net.
+;56             IN      PTR     clblfl-rr-10.atlantic.net.
+57              IN      PTR     bakbone-2.atlantic.net.
+67              IN      PTR     bakbone-3.atlantic.net.
+58              IN      PTR     winhost4.atlantic.net.
+59              IN      PTR     winhost5.atlantic.net.
+60              IN      PTR     webstats2.atlantic.net.
+61              IN      PTR     andc-pt-3.atlantic.net.
+62              IN      PTR     atl-share.atlantic.net.
+63              IN      PTR     andc-auth-1.atlantic.net.
+65              IN      PTR     clblfl-rr-12.atlantic.net.
+66              IN      PTR     clblfl-rr-13.atlantic.net.
+68              IN      PTR     bakbone-1.atlantic.net.
+69              IN      PTR     bakbone-4.atlantic.net.
+;70             IN      PTR     saguaro.atlantic.net.
+75              IN      PTR     spool.atlantic.net.
+76              IN      PTR     andc-pt-w40.atlantic.net.
+77              IN      PTR     andc-pt-8.atlantic.net.
+79              IN      PTR     winhost6.atlantic.net.
+80              IN      PTR     andc-pt-10.atlantic.net.
+81              IN      PTR     andc-pt-11.atlantic.net.
+82              IN      PTR     andc-pt-w41atlantic.net.
+;82             IN      PTR     andc-pt-w31.atlantic.net.
+
+85              IN      PTR     andc-pt-17.atlantic.net.
+86              IN      PTR     andc-pt-13.atlantic.net.
+87              IN      PTR     andc-pt-w42.atlantic.net.
+;87             IN      PTR     andc-pt-14.atlantic.net.
+88              IN      PTR     andc-pt-15.atlantic.net.
+
+111             IN      PTR     jnh-asterisk.atlantic.net.
+113             IN      PTR     web-smarthost-1.atlantic.net.
+115             IN      PTR     virtual-berlin.atlantic.net.
+120             IN      PTR     polyboot.atlantic.net.
+121             IN      PTR     nst.atlantic.net.
+122             IN      PTR     deliver3.atlantic.net.
+123             IN      PTR     deliver4.atlantic.net.
+126             IN      PTR     ns3andcache.atlantic.net.
+
+145             IN      PTR     gsvlfl-ns-1.atlantic.net.
+146             IN      PTR     andc-pt-w1.atlantic.net.
+147             IN      PTR     andc-pt-w2.atlantic.net.
+148             IN      PTR     andc-pt-w3.atlantic.net.
+149             IN      PTR     andc-pt-w4.atlantic.net.
+150             IN      PTR     andc-pt-w5.atlantic.net.
+151             IN      PTR     andc-pt-w6.atlantic.net.
+152             IN      PTR     andc-pt-w7.atlantic.net.
+153             IN      PTR     andc-pt-w8.atlantic.net.
+154             IN      PTR     andc-pt-w13.atlantic.net.
+155             IN      PTR     andc-pt-w12.atlantic.net.
+156             IN      PTR     andc-pt-w14.atlantic.net.
+157             IN      PTR     andc-pt-w16.atlantic.net.
+158             IN      PTR     andc-pt-w18.atlantic.net.
+159             IN      PTR     andc-pt-w15.atlantic.net.
+160             IN      PTR     andc-pt-w17.atlantic.net.
+161             IN      PTR     andc-pt-w19.atlantic.net.
+163             IN      PTR     rio-121.atlantic.net.
+164             IN      PTR     andc-pt-w21.atlantic.net.
+165             IN      PTR     andc-pt-w23.atlantic.net.
+166             IN      PTR     andc-pt-w25.atlantic.net.
+167             IN      PTR     andc-pt-w27.atlantic.net.
+168             IN      PTR     andc-pt-w20.atlantic.net.
+169             IN      PTR     andc-pt-w22.atlantic.net.
+170             IN      PTR     andc-pt-dc3.atlantic.net.
+200             IN      PTR     new-mailhome-0.atlantic.net.
+201             IN      PTR     abr-mon.atlantic.net.
+212             IN      PTR     toolshed.atlantic.net.
+
+220             IN      PTR     andc-pt-20.atlantic.net.
+221             IN      PTR     andc-pt-21.atlantic.net.
+222             IN      PTR     andc-pt-22.atlantic.net.
+223             IN      PTR     andc-pt-23.atlantic.net.
+241             IN      PTR     andc-pt-24.atlantic.net.
+244             IN      PTR     andc-pt-35.atlantic.net.
+245             IN      PTR     andc-pt-36.atlantic.net.
+246             IN      PTR     andc-pt-37.atlantic.net.
+247             IN      PTR     andc-pt-38.atlantic.net.
+
+252             IN      PTR     andc-pt-9.atlantic.net.
+253             IN      PTR     andc-sbr-2.atlantic.net.
+254             IN      PTR     andc-sbr-1.atlantic.net
