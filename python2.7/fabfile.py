@@ -3,7 +3,6 @@
 from fabric.api import *
 
 env.hosts=["209.208.108.246"]
-env.password="Nrprocks!"
 
 env.user="root"
 def hostname_check():
